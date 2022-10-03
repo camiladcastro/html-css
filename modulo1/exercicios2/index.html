@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <ul>
+        <li>Abre a tag picture</li>
+        <li>Coloca a tag img para colocar a imagem no tamanho grande</li>
+        <li>Acima coloca a tag source:media type com o tamanho max-width</li>
+        <li>O valor a ser inserido deve ser maior do que o tamanho da imagem grande para não criar a barra de rolagem horizontal</li>
+        <li>Exemplo: 
+            <ul>
+                <li>Se a tela for até 700px: imagem pequena</li>
+                <li>De 700px a 1050px: imagem média</li>
+                <li>Maior que 1050px: imagem grande</li>
+            </ul>
+        </li>
+        <li>No srcset tem que por o caminho que está a imagem (não da pra pesquisar então tem que digitar)</li>
+        <li>No type tem que por image/png (o formato da imagem)</li>
+        <li>Vai inserindo o source sempre acima e diminuindo o valor do max-width</li>    
+    </ul>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/ft3.jpg" type="image/jpg">
+        <source media="(max-width:660px )" srcset="imagens/ft2.jpg" type="image/jpg">
+        <img src="imagens/ft1.jpg" alt="">
+    </picture>
+    <h1>Mídias</h1>
+    <audio src="audio/escapism.mp3" controls preload="metadata" loop></audio>
+
+    <audio>
+        <source src="audio/escapism.mp3" type="audio/mpeg">
+        <source src="audio/escapism.ogg" type="audio/ogg">
+        <source src="audio/escapism.wav" type="audio/wave">
+    </audio>
+ 
+    <ul>
+        <li>Tag audio</li>
+        <li>Formatos:mp3(mpeg), ogg, wav (evita usar)</li>
+        <li><b>Autoplay:</b> Da play sozinho</li>
+        <li><b>Controls:</b> Aparece o controle de audio</li>
+        <li><b>Loop:</b>Repete sozinho</li>
+        <li><b>Source src</b>: serve pra tentar ler o audio em diversos formatos caso o navegador da pessoa não suporte o mp3. Coloca dentro da tag audio mas sem o src</li>
+        <li><b>Preload metadata:</b> carrega as info iniciais do audio, mas não carrega ele todo, só quando a pessoa da play</li>
+    </ul>
+
+    <h1>Vídeos hospedagem própria</h1>
+
+    <video src="videos/video1.mp4" controls width="300" poster="videos/foto.JPG"></video>
+
+<video width="300" height="200"controls>
+    <source src="videos/video1.mp4" type="video/mp4">
+    <source src="videos/video1.m4v" type="video/m4v">
+    <source src="videos/video1.webm" type="video/webm">
+    <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+</video>
+
+<ul>
+    <li>Tag video</li>
+    <li>Formatos:mp4(m4v), webm, ogv </li>
+    <li>O segundo código faz com que o navegador tente ler em diversos formatos até ser o que ele aceita</li>
+    <li><b>Handbrake:</b> programa que converte formato do video, tamanho, etc</li>
+    <li><b>Controls:</b> aparece os controles</li>
+    <li><b>Height ou width</b> escolhe o tamanho da largura ou altura</li>
+    <li><b>Poster:</b> foto do inicio do video</li>
+</ul>
+
+<h1>Videos externos (recomendado)</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uMU80c_-ycQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ul>
+    <li>Ir no youtube: compartilhar -> incorporar -> copiar o codigo</li>
+    <li>Pode usar do vimeo tbm mas é pago</li>
+</ul>
+</body>
+</html>

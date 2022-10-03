@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+<style>
+    a{
+        color:rgba(255, 0, 200, 0.885)
+    }
+    a:visited{
+        color:rgb(22, 128, 128)
+    }
+    a:hover{
+        color: blue;
+    }
+    a:active{
+        color: yellow;
+    }
+    .especial::after{
+        content: ' [CLIQUE NO LINK]';
+        color:black;
+        font-weight: normal;
+    }
+    .especial{
+        background-color: bisque;
+    }
+</style>
+</head>
+<body>
+    <h1>Personalizando link</h1>
+    <ul>
+        <li><a href="https://youtube.com" class="especial">Youtube</a></li>
+        <li><a href="https://https://www.facebook.com">Facebook</a></li>
+    </ul>
+    <p> # = id</p>
+    <p> . = class</p>
+    <p>: = pseudo-class</p>
+    <p>:: = pseudo-element</p>
+    <p>> = children</p>
+    
+</body>
+</html>

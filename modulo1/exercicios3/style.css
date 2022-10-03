@@ -1,0 +1,10 @@
+@charset "utf-8";
+h4{
+    color: rgb(255, 0, 204);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(249, 249, 96);
+}
+h2{
+    text-decoration: underline;
+}

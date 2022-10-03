@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        #d1{
+            background-color: bisque;
+            width: 300px;
+            height: 300px;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            background-color: rgb(57, 188, 70);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div>Passe o mouse aqui
+    <p>Usando div > "elemento" - quer dizer que aquele elemento é um filho da div. </p>
+    <p> div:hover > elemento - o que vai acontecer com esse elemento quando tiver o hover</p>
+    <p>Display: none - não aparece</p>
+    <p>Display: block - aparece</p>
+    </div>
+</body>
+</html>

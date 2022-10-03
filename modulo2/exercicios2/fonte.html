@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+   @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+   @font-face {
+    font-family: 'Balloon';
+    src: url('BALLOON DREAMS.ttf') format('truetype');
+   }
+   
+    body{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px; 
+    }
+    h1{
+        font: 3em 'Balloon';
+    }
+    h2{
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2em;        font-family: 'Alfa Slab One', cursive;
+    }
+    h3{
+        font: 100 1.4em 'Roboto';
+    }
+</style>
+    <title>Fontes</title>
+</head>
+<body>
+    <h1>Fontes</h1>
+    <h2>Font-family</h2>
+        <ul>
+            <li>Quando for colocar duas palavras como fonte é pra usar ' '.</li>
+            <li>Safe combinations: arial, helvetica, sans-serif. É recomendado colocar mais de uma fonte porque caso o computador não consiga ler uma delas, vai tentar a outra. Sempre escrever por último o estilo de fonte que é, serif, sans-serif etc</li> <li>Também pode colocar apenas: serif, sans-serif, monoespace e o próprio dispositivo escolhe uma fonte dessa forma para colocar.</li>
+            <li>Máximo 3 tipos de fontes no site</li>
+        </ul>
+    <p><b>SAFE FONTS:</b> <ul>
+    <li>Arial (sans-serif)</li>      
+    <li>Verdana (sans-serif)</li>        
+    <li>Helvetica (sans-serif)</li>          
+    <li>Tahoma (sans-serif)</li>       
+    <li>Trebuchet MS (sans-serif)</li>
+    <li>Times New Roman (serif)</li>           
+    <li>Georgia (serif)</li>   
+    <li>Garamond (serif)</li>    
+    <li>Courier New (monospace)</li>           
+    <li>Brush Script MT (cursive)</li>
+    </ul></p>
+    <h2>Font-size</h2>
+    <ul>
+        <li>Medidas absolutas: cm e mm (cada tela mostra de um jeito diferente), in (polegada), pt e pc (n é recomendado para tela) e px (recomendado)</li>
+        <li>Medidas relativas: em (tamanho do M), ex (altura), rem(relativo ao tamanho do body), vw (% da largura do tamanho da tela), vh (% da altura do tamanho da tela)</li>
+        <li>px e em são as únicas recomendadas!!!! Melhor ainda usar em porque vai de acordo com a % do tamanho padrão</li>
+        <li>16 px = 1em. Tamanho padrão</li>
+    </ul>
+    <h2>Font-weight</h2>
+    <ul>
+        <li>Opções: lighter, normal, bold, bolder</li>
+        <li>Valor entre 100 e 900 </li>
+        <li>Font-style: normal ou italico</li>
+        <li>Text-decoration: underline</li>
+        <li>Shorthand: condensar todas as propriedades em uma linha só. ORDEM: font-style font-weight font-size font-family. <li> Exemplo ->  font: italic 100 2em arial</li>
+    </ul>
+    <h2>Adicionar fonte</h2>
+    <h3>Adicionar uma fonte nova sem precisar fazer download</h3>
+    <ul>
+        <li>Clica na fonte que você quer no google fonts</li>
+        <li>Seleciona "select this style"</li>
+        <li>Aperta nos 4 quadradinhos que fica la em cima e depois em @import</li>
+        <li>Copia o código e cola dentro de style na primeira linha</li>
+    </ul>
+    <h3>Adicionar fonte fazendo download</h3>
+    <ul>
+        <li>Na primeira linha de style usar @font-face {}</li>
+        <li>Font-family: 'você inventa um nome para a fonte' </li>
+        <li>Src: url ('nome da fonte igual está no arquivo com .ttf/otf', caso esteja dentro de uma pasta deve colocar antes) </li>
+        <li> Format ('tipo de formart de acordo com o formato do arquivo')</li>
+        <li>Tipos de format: opentype (otf) ; truetype (ttf) ; embedded-opentype ; truetype-aat ; svg </li>
+    </ul>
+</body>
+</html>

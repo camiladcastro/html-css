@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Meu primeiro html</title>
+</head>
+<body>
+    <h1>Textos, parágrafos e simbolos</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, exercitationem magni beatae ipsam nesciunt temporibus nobis dolore dolorum corrupti dicta dolores impedit ratione quis rem reiciendis ipsa laboriosam recusandae quod.</p>
+    <p>Primeiro parágrafo <br> a tag &lt;br&gt; quebra o parágrafo </p>
+    <p>Simbolos especiais:
+        &reg;
+        &copy;
+        &trade;
+        &euro;
+        &cent;
+        &uparrow;
+    </p>
+    <p>Emojipedia:
+        😀🥺💚🤮
+    </p>
+
+    <hr>
+
+    <h1>Imagens</h1>
+    <p>Imagem
+    <img src="html-200.png" alt="logo html">
+    Imagem externa da internet:
+    <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" alt="logo javascrpit">
+    </p>
+    <p>Favicon: Escrever link na head e escolher a imagem </p>
+    
+    <hr>
+
+    <h1>Formatações</h1>
+    <p>Termo <b>em negrito</b> usando a tag b (não semantica)</p>
+    <p>Termo <strong>em destaque</strong> usando a tag strong (semantica) - MELHOR OPÇÃO </p>
+    <p>Termo <i>em italico</i> usando a tag i (não semantica)</p>
+    <p>Termo <em>em ênfase</em> usando a tag em (semantica) - MELHOR OPÇÃO</p>
+    <p>Termo <mark>marcado</mark> usando a tag mark </p><p>Termo <mark style="background-color:rgb(255, 0, 255);">marcado</mark> usando a tag mark e css pra mudar de cor</p>
+    <big>Texto grande</big> usando tag big <p><small>Texto pequeno</small> usando tag small</p>
+    <p>Texto <del>riscado</del> com a tag del</p>
+    <p>Texto <ins>sublinhado</ins> com a tag ins</p>
+    <p>Texto <u>sublinhado</u> com a tag u (não semantica)</p>
+    <p>Texto sobrescrito com a tag sup x<sup>20+3</sup></p>
+    <p>Texto subescrito com a tag sub H<sub>2</sub>0</p>
+    <pre>Texto pre formatado
+               Ele segue igual ta no código
+    </pre>
+    <p>Citação com a tag q <q>o computador é um burro muito rápido</q></p>
+    <p>Citação com frase usando a tag blockquote:</p>
+    <blockquote cite="coloca o link de onde vc tirou a citação">
+        Ela partiu, e nunca mais voltou, não voltou não
+    </blockquote>
+    <p>Explicação das abreviações usando a tag abbr <abbr title="HyperText Markup Language">HTML</abbr></p>
+    
+    <hr>
+
+    <h1>Listas</h1>
+    <ol type="A" start="3">
+        <li>Lista ordenada com a tag ol</li>
+        <li>O type é pra escolher se é numero, letra ou letra romana</li>
+        <li>O start define qual é o primeiro item, tem que ta sempre em número</li>
+        <li>O fechamento da tag li é opcional
+    </ol>
+    <ul type="square">
+        <li>Lista não ordenada com a tag ul</li>
+        <li>O type escolhe como é o pontinho: disc, circle, square</li>
+        <li>Dica: se quiser apagar uma letra segura o alt que da pra clicar em vários lugares</li>
+    </ul>
+    <ol>
+        <li>Misturar listas</li>
+        <ol type="a">
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+        </ol>
+        <li>Misturar listas</li>
+        <ul type="disc">
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+        </ul>
+        </ol>
+    <dl>
+        <dt>Termo com a tag dt</dt>
+        <dd>Explicação com a tag dd</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação pra criar site</dd>
+    </dl>
+
+    <hr>
+
+    <h1>Links</h1>
+    <p>Colocando um <a href="https://www.google.com">link externo</a> com a tag a </p>
+    <p>Colocando um <a href="https://www.google.com" target="_blank" rel="external">link externo</a> com a tag a que abre uma nova guia</p>
+    <p>Colocando um <a href="page2.html" rel="next">link interno</a> com a tag a (tem que ta na mesma pasta, se for na pasta anterior quando for pesquisar tem que colocar ../)</p>
+    <p>Colocando<a href="/download/historiadainternet.pdf"> link</a> para abrir o arquivo na outra página</p>
+    <p>Colocando<a href="/download/historiadainternet.pdf" download="historiadainternet" type="application/pdf"> link</a> para fazer download do arquivo</p>
+
+</body>
+</html>
