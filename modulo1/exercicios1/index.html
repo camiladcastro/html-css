@@ -6,8 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html.ico" type="image/x-icon">
     <title>Meu primeiro html</title>
+    <style>
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            margin: 0px;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+            background-color: yellow;
+            color: black;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        #textos{
+            padding: 30px 30px;
+            background-color: antiquewhite;
+            margin: 0px 30px;
+            border-radius: 40px;
+        }
+        #imagens{
+            background-color: azure;
+            border-radius: 20px;
+            margin: 0px 30px;
+            padding: 30px;
+        }
+
+    </style>
 </head>
 <body>
+    <div id="textos">
     <h1>Textos, parágrafos e simbolos</h1>
     <h2>Título 2</h2>
     <h3>Título 3</h3>
@@ -27,17 +65,17 @@
     <p>Emojipedia:
         😀🥺💚🤮
     </p>
-
+    </div>
     <hr>
-
+<div id="imagens">
     <h1>Imagens</h1>
     <p>Imagem
-    <img src="html-200.png" alt="logo html">
+    <img src="imagens/html-200.png" alt="logo html" height="100px">
     Imagem externa da internet:
-    <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" alt="logo javascrpit">
+    <img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" alt="logo javascrpit" height="100px">
     </p>
-    <p>Favicon: Escrever link na head e escolher a imagem </p>
-    
+    <p>Favicon: emoticon do site - tag link na head e escolher a imagem </p>
+</div>
     <hr>
 
     <h1>Formatações</h1>

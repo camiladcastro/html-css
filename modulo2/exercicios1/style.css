@@ -25,3 +25,9 @@ h2{
 p{
     text-align: justify;
 }
+aside{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-image: linear-gradient(to left, #6755cd, #ff49ccbe, #ffdd00 );
+}
